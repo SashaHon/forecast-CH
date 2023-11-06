@@ -5,8 +5,8 @@ export function Main() {
   const displayData = ["Temperature", "Humidity", "Rain", "Wind"];
   return (
     <main>
-      {displayData.map((el) => (
-        <Article title={el} />
+      {displayData.map((el, index) => (
+        <Article key={"key-" + index} title={el} />
       ))}
     </main>
   );
