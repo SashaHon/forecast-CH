@@ -6,12 +6,12 @@ import { Main } from "./components/main/Main";
 
 function App() {
   return (
-    <>
+    <div>
       <Navigation />
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 
