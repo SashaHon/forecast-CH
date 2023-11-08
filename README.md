@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Weather Forecast guidelines
+
+## design guideline
+
+h1 - text-2xl
+h2 - text-2xl (it's important, so is big);
+subtitle - text-sm font-light (for extra contrast to the title)

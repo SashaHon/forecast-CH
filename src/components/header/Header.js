@@ -21,10 +21,12 @@ export function Header() {
         backgroundPosition: "center",
       }}
     >
-      <div className="">
-        <h1>🇨🇭Swiss🇨🇭 Current Weather Forecast</h1>
-        <p>The forecast is presentend according to current time</p>
-        <h2>
+      <div className="bg-slate-200/30 p-8 rounded-md">
+        <h1 className="text-2xl">🇨🇭Swiss🇨🇭 Current Weather Forecast</h1>
+        <p className="text-sm font-light">
+          Forecast is presentend according to current time
+        </p>
+        <h2 className="mt-6 text-2xl">
           {date} {month} {time}
         </h2>
       </div>
