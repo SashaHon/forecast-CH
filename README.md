@@ -76,3 +76,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 h1 - text-2xl
 h2 - text-2xl (it's important, so is big);
 subtitle - text-sm font-light (for extra contrast to the title)
+
+## features
+
+- show current temperature, humidity, rain, wind in Switzerland as default
+- depending on this data render relevant forecast icons
+- enable to choose Swiss city for the forecast
+- render forecast data and city name according to the chosen city

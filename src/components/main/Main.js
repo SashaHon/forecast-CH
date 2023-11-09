@@ -6,7 +6,7 @@ const API =
   "https://api.open-meteo.com/v1/forecast?hourly=temperature_2m,relativehumidity_2m,apparent_temperature,rain,windspeed_10m";
 const SWISS_LOCATION = ["47.0002", "8.0143"];
 
-export function Main() {
+export function Main({ getCityName }) {
   const [forecastData, setForecastData] = useState({});
   const [location, setLocation] = useState(SWISS_LOCATION);
 
@@ -38,12 +38,18 @@ export function Main() {
   }
 
   return (
-    <main className="grow shrink-0 basis-auto flex flex-wrap justify-between container mx-auto px-20 py-10">
-      {forecastData &&
-        Object.entries(forecastData).map((entriesArr, index) => {
-          return <Article key={"key" + index} data={entriesArr} />;
-        })}
-      <Form onLocationChange={handleLocationChange} location={location} />
+    <main className="grow shrink-0 basis-auto container mx-auto px-20 py-10 flex flex-col justify-between">
+      <section className="flex flex-wrap justify-between">
+        {forecastData &&
+          Object.entries(forecastData).map((entriesArr, index) => {
+            return <Article key={"key" + index} data={entriesArr} />;
+          })}
+      </section>
+      <Form
+        onLocationChange={handleLocationChange}
+        getCityName={getCityName}
+        location={location}
+      />
     </main>
   );
 }
