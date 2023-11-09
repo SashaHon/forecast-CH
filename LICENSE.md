@@ -1,0 +1,1 @@
+The software in this repository may only be used for non-commercial purposes. Any commercial use, including but not limited to incorporation into commercial products or use in commercial settings, is strictly prohibited.
